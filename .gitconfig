@@ -1,0 +1,17 @@
+[user]
+	name = a0ki-github
+	email = aoki.hotaka@gmail.com
+[core]
+	editor = vim
+[alias]
+	co = checkout
+  com = commit -am
+  ad = add -A
+  s = status
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[init]
+	defaultBranch = main
