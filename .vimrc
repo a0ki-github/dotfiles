@@ -23,6 +23,7 @@ Plug 'Townk/vim-autoclose'
 Plug 'elzr/vim-json'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
+Plug 'tomtom/tcomment_vim'
 
 call plug#end()
 
