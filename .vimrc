@@ -69,11 +69,12 @@ set iskeyword+=:
 set backspace=2
 set ambiwidth=double
 set nocompatible
+set autoindent
+set smartindent
 autocmd TextYankPost * call system("tmux load-buffer -", v:event.regcontents)
 
 " for ruby
 syntax on
-filetype plugin indent on
 compiler ruby
 
 let ruby_space_errors=1
