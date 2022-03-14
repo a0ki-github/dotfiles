@@ -15,6 +15,7 @@ alias ls="ls -GF"
 alias gls="gls --color"
 alias rb="ruby"
 alias sail="./vendor/bin/sail"
+alias vw="view"
 
 # Prevent rm -f from asking for confirmation on things like `rm -f *.bak`.
 setopt rm_star_silent
