@@ -14,6 +14,8 @@ alias ll='ls -la'
 alias ls="ls -GF"
 alias gls="gls --color"
 alias rb="ruby"
+alias p="php"
+alias pa="php artisan"
 alias sail="./vendor/bin/sail"
 alias vw="view"
 
