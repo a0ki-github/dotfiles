@@ -3,6 +3,7 @@
 	email = aoki.hotaka@gmail.com
 [core]
 	editor = vim
+	excludesfile = /Users/hotaka/.gitignore_global
 [alias]
 	co = checkout
   com = commit -am
