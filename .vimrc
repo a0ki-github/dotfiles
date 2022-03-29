@@ -28,6 +28,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'StanAngeloff/php.vim'
 Plug 'jwalton512/vim-blade'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'digitaltoad/vim-pug'
 Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
 
 call plug#end()
