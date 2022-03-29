@@ -25,10 +25,10 @@ Plug 'elzr/vim-json'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'digitaltoad/vim-pug'
 Plug 'StanAngeloff/php.vim'
 Plug 'jwalton512/vim-blade'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
 
 call plug#end()
 
