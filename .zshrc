@@ -15,6 +15,7 @@ alias ls="ls -GF"
 alias gls="gls --color"
 alias rb="ruby"
 alias par="php artisan"
+alias mar="./mac artisan"
 alias sail="./vendor/bin/sail"
 alias vw="view"
 
