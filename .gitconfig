@@ -6,7 +6,9 @@
 	excludesfile = /Users/hotaka/.gitignore_global
 [alias]
 	co = checkout
-  com = commit -am
+  com = commit -m
+  coma = commit -am
+  d = diff
   ad = add -A
   s = status
 [filter "lfs"]
