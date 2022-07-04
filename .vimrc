@@ -22,7 +22,6 @@ Plug 'davidhalter/jedi-vim'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'Townk/vim-autoclose'
 Plug 'elzr/vim-json'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'StanAngeloff/php.vim'
@@ -91,7 +90,6 @@ au FileType javascript set ts=2 sw=2 softtabstop=2 expandtab
 au FileType html set ts=2 sw=2 softtabstop=2 expandtab
 au FileType eruby set ts=2 sw=2 softtabstop=2 expandtab
 au FileType yaml set ts=2 sw=2 softtabstop=2 expandtab
-au FileType blade set ts=4 sw=4 softtabstop=4 expandtab
 au FileType php set ts=4 sw=4 softtabstop=4 expandtab
 autocmd FileType ruby map :W<CR> :w<CR>:!ruby -c %<CR>
 
