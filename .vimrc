@@ -77,6 +77,7 @@ set ambiwidth=double
 set nocompatible
 set autoindent
 set smartindent
+set shortmess-=S
 autocmd TextYankPost * call system("tmux load-buffer -", v:event.regcontents)
 
 " for ruby
