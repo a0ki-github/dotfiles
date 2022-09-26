@@ -29,6 +29,7 @@ Plug 'jwalton512/vim-blade'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'digitaltoad/vim-pug'
 Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
@@ -76,6 +77,7 @@ set ambiwidth=double
 set nocompatible
 set autoindent
 set smartindent
+set shortmess-=S
 autocmd TextYankPost * call system("tmux load-buffer -", v:event.regcontents)
 
 " for ruby
