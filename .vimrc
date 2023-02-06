@@ -29,7 +29,8 @@ Plug 'jwalton512/vim-blade'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'digitaltoad/vim-pug'
 Plug 'dNitro/vim-pug-complete', { 'for': ['jade', 'pug'] }
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
