@@ -14,6 +14,7 @@ alias ll='ls -la'
 alias ls="ls -GF"
 alias gls="gls --color"
 alias rb="ruby"
+alias py="python3"
 alias par="php artisan"
 alias macb="~/work/invase-backend/docker/mac"
 alias macf="~/work/invase-frontend/docker/mac"
