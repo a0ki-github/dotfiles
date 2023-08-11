@@ -94,6 +94,7 @@ au FileType html set ts=2 sw=2 softtabstop=2 expandtab
 au FileType eruby set ts=2 sw=2 softtabstop=2 expandtab
 au FileType yaml set ts=2 sw=2 softtabstop=2 expandtab
 au FileType php set ts=4 sw=4 softtabstop=4 expandtab
+au FileType py set ts=4 sw=4 softtabstop=4 expandtab
 autocmd FileType ruby map :W<CR> :w<CR>:!ruby -c %<CR>
 
 au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
