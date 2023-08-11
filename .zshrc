@@ -5,6 +5,7 @@ eval "$(nodenv init -)"
 bindkey -e
 
 # Avoid accidental deletion
+alias vim='/opt/homebrew/bin/vim'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
