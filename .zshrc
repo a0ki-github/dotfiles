@@ -6,6 +6,7 @@ bindkey -e
 
 # Avoid accidental deletion
 alias vim='/opt/homebrew/bin/vim'
+alias n='nvim'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
