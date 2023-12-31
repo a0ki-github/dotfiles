@@ -2,7 +2,7 @@
 	name = a0ki-github
 	email = aoki.hotaka@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = /Users/hotaka/.gitignore_global
 [alias]
 	co = checkout
