@@ -23,7 +23,7 @@ alias macf="~/work/invase-frontend/docker/mac"
 alias ar="artisan"
 alias sail="./vendor/bin/sail"
 alias vw="view"
-alias f='nvim $(fzf)'
+alias f='nvim $(find . -type f -not -path "*/.git/*" -not -path "*/node_modules/*" | fzf)'
 
 # Prevent rm -f from asking for confirmation on things like `rm -f *.bak`.
 setopt rm_star_silent
