@@ -15,7 +15,7 @@ local options = {
 	shiftwidth = 2,            -- インデントの幅（スペース数）
 	smartindent = true,        -- スマートインデントを有効化
 	tabstop = 2,               -- タブの幅
-  undofile = true,           -- 一度閉じたファイルもundoできるように
+	undofile = true,           -- 一度閉じたファイルもundoできるように
 	number = true,             -- 行番号の表示
 	wrap = false,              -- 自動折り返しを無効化
 
