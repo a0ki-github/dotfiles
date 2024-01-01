@@ -13,7 +13,7 @@ autocmd("BufWritePost", {
 })
 
 -- 一部言語でインデントを4に
-vim.api.nvim_create_autocmd("FileType", {
+autocmd("FileType", {
   pattern = {"php", "python"},
   callback = function()
     vim.opt.tabstop = 4

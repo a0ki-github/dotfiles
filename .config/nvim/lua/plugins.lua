@@ -10,9 +10,6 @@ return require("packer").startup(function(use)
   -- コメントアウトのショートカット
   use "tomtom/tcomment_vim"
 
-  -- 括弧閉じの補完
-  use "rstacruz/vim-closer"
-
   -- 括弧やブロックなどのペア間のジャンプなど
   use {"andymass/vim-matchup", event = "VimEnter"}
 
