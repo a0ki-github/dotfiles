@@ -39,6 +39,10 @@ keymap("n", "q<Space>", ":q<Return>", opts)
 keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
 
 
+-- LSP関連
+keymap("n", "<C-b>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジャンプ
+keymap("n", "<C-h>", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- ホバー
+
 --[[
 
 Insert

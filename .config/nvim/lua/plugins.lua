@@ -21,4 +21,12 @@ return require("packer").startup(function(use)
     -- optional for icon support
     requires = { "nvim-tree/nvim-web-devicons" },
   }
+
+  -- lsp
+  use {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
+  }
+  require("lspconfig")
 end)
