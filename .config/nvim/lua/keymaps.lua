@@ -14,39 +14,23 @@ Modes
   Normal
 --]]
 
--- ウィンドウ作成
-keymap("n", "ss", ":split<Return><C-w>w", opts)
-keymap("n", "sv", ":vsplit<Return><C-w>w", opts)
--- ウィンドウ移動
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
-
 -- 全選択
 keymap("n", "<C-a>", "gg<S-v>G", opts)
-
--- ;でコマンド入力
-keymap("n", ";", ":", opts)
 
 -- Yで行ヤンクにする
 keymap("n", "Y", "yy", opts)
 
 -- <Space>q で強制終了
-keymap("n", "q<Space>", ":q<Return>", opts)
-
--- ESC*2 でハイライトやめる
-keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
+keymap("n", "q<Space>", ":q!<Return>", opts)
 
 
 -- LSP関連
-keymap("n", "<C-b>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジャンプ
+keymap("n", "<C-d>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジャンプ
 keymap("n", "<C-h>", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- ホバー
 
 --[[
 
 Insert
-
 --]]
 
 -- 括弧関連

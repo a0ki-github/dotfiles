@@ -1,11 +1,5 @@
 local autocmd = vim.api.nvim_create_autocmd
 
--- コメント行での改行時、自動でコメントにならないように
-autocmd("BufEnter", {
-	pattern = "*",
-	command = "set fo-=c fo-=r fo-=o",
-})
-
 -- プラグイン編集時に自動でPackerCompile
 autocmd("BufWritePost", {
   pattern = { "plugins.lua" },
