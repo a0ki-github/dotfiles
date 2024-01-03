@@ -20,13 +20,5 @@ return require("packer").startup(function(use)
   use { "ibhagwan/fzf-lua",
     -- optional for icon support
     requires = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-      require('fzf-lua').files({
-        -- デフォルトのコマンドだとエラーが出るのでカスタマイズ
-        files = {
-          cmd = 'find . -type f -not -path "*/.git/*" -not -path "*/node_modules/*"',
-        },
-      })
-    end
   }
 end)
