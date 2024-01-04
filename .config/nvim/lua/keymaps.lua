@@ -25,7 +25,7 @@ keymap("n", "q<Space>", ":q!<Return>", opts)
 
 
 -- LSP関連
-keymap("n", "<C-d>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジャンプ
+keymap("n", "<C-b>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジャンプ
 keymap("n", "<C-h>", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- ホバー
 
 --[[
