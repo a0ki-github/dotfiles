@@ -6,6 +6,7 @@ bindkey -e
 
 # Avoid accidental deletion
 alias vim='nvim'
+alias vw="view"
 alias n='nvim'
 alias rm='rm -i'
 alias mv='mv -i'
@@ -18,12 +19,15 @@ alias gls="gls --color"
 alias rb="ruby"
 alias py="python3"
 alias par="php artisan"
-alias macb="~/work/invase-backend/docker/mac"
-alias macf="~/work/invase-frontend/docker/mac"
-alias ar="artisan"
-alias sail="./vendor/bin/sail"
-alias vw="view"
 alias f='nvim $(find . -type f -not -path "*/.git/*" -not -path "*/node_modules/*" | fzf)'
+
+## 仕事関係
+alias mar="./mac artisan"
+alias csfix="./run.sh pcf:fix"
+alias csfixall="./run.sh pcf:fix-all"
+alias lys="./run.sh lrs:analyse"
+alias lysb="./run.sh lrs:generate-baseline"
+alias psql="docker run --rm -it --net=host postgres:12 psql"
 
 # Prevent rm -f from asking for confirmation on things like `rm -f *.bak`.
 setopt rm_star_silent
