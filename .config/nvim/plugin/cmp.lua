@@ -24,15 +24,17 @@ cmp.setup({
   },
 })
 
-cmp.setup.cmdline('/', {
+cmp.setup.cmdline({ '/', '?' }, {
   mapping = cmp.mapping.preset.cmdline(),
   sources = {
-    { name = 'buffer' } --ソース類を設定
+    { name = 'buffer' }
   }
 })
-cmp.setup.cmdline(":", {
+cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = "path" }, --ソース類を設定
-  },
+  sources = cmp.config.sources({
+    { name = 'path' }
+  }, {
+    { name = 'cmdline' }
+  })
 })

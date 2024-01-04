@@ -31,15 +31,11 @@ return require("packer").startup(
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
-
-    require("lspconfig")
-
     use "hrsh7th/nvim-cmp" --補完エンジン本体
     use "hrsh7th/cmp-nvim-lsp" --LSPを補完ソースに
     use "hrsh7th/cmp-buffer"  --bufferを補完ソースに
     use "hrsh7th/cmp-path"  --pathを補完ソースに
     use "hrsh7th/vim-vsnip" --スニペットエンジン
     use "hrsh7th/cmp-vsnip" --スニペットを補完ソースに
-
-    require("cmp")
+    use "hrsh7th/cmp-cmdline" -- コマンドモードでの補完
   end)

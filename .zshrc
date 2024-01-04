@@ -21,7 +21,7 @@ alias py="python3"
 alias par="php artisan"
 alias f='nvim $(find . -type f -not -path "*/.git/*" -not -path "*/node_modules/*" | fzf)'
 
-## 仕事関係
+# 仕事関係
 alias mar="./mac artisan"
 alias csfix="./run.sh pcf:fix"
 alias csfixall="./run.sh pcf:fix-all"
