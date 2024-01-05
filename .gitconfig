@@ -11,6 +11,7 @@
   d = diff
   ad = add -A
   s = status
+  w = switch
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
