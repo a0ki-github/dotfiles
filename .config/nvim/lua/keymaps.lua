@@ -34,9 +34,9 @@ Insert
 --]]
 
 -- 括弧関連
-keymap("i", "(<Enter>", "()<Left><CR><ESC><S-o><tab>", opts)
-keymap("i", "{<Enter>", "{}<Left><CR><ESC><S-o><tab>", opts)
-keymap("i", "[<Enter>", "[]<Left><CR><ESC><S-o><tab>", opts)
+keymap("i", "(<Enter>", "()<Left><CR><ESC><S-o>", opts)
+keymap("i", "{<Enter>", "{}<Left><CR><ESC><S-o>", opts)
+keymap("i", "[<Enter>", "[]<Left><CR><ESC><S-o>", opts)
 keymap("i", "(", "()<Left>", opts)
 keymap("i", "{", "{}<Left>", opts)
 keymap("i", "[", "[]<Left>", opts)

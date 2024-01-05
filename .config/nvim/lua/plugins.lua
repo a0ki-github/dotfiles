@@ -11,6 +11,8 @@ return require("packer").startup(
     -- コメントアウトのショートカット
     use "tomtom/tcomment_vim"
 
+    use "Vimjas/vim-python-pep8-indent"
+
     -- 括弧やブロックなどのペア間のジャンプなど
     use {"andymass/vim-matchup", event = "VimEnter"}
 
