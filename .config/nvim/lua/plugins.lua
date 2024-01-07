@@ -25,8 +25,6 @@ return require("packer").startup(
       requires = { "nvim-tree/nvim-web-devicons" },
     }
 
-    -- TODO 全角スペースの可視化
-
     -- lsp
     use {
         "williamboman/mason.nvim",
