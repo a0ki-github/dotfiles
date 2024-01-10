@@ -23,6 +23,9 @@ keymap("n", "Y", "yy", opts)
 -- <Space>q で強制終了
 keymap("n", "q<Space>", ":q!<Return>", opts)
 
+-- 前後のバッファに移動
+keymap("n", "<C-[>", "<cmd>bprev<CR>", opts)
+keymap("n", "<C-]>", "<cmd>bnext<CR>", opts)
 
 -- LSP関連
 keymap("n", "<C-b>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジャンプ
