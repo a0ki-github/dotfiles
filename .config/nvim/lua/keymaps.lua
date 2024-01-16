@@ -27,8 +27,12 @@ keymap("n", "q<Space>", ":q!<Return>", opts)
 keymap("n", "<C-[>", "<cmd>bprev<CR>", opts)
 keymap("n", "<C-]>", "<cmd>bnext<CR>", opts)
 
+-- 現在のバッファを終了
+keymap("n", "<C-x>", "<cmd>bd<CR>", opts)
+
 -- LSP関連
 keymap("n", "<C-b>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジャンプ
+keymap("n", "<C-n>", "<cmd>lua vim.lsp.buf.references()<CR>", opts) -- 参照元ジャンプ
 keymap("n", "<C-h>", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- ホバー
 
 --[[
