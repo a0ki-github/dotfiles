@@ -47,4 +47,6 @@ return require("packer").startup(
     use "hrsh7th/vim-vsnip" --スニペットエンジン
     use "hrsh7th/cmp-vsnip" --スニペットを補完ソースに
     use "hrsh7th/cmp-cmdline" -- コマンドモードでの補完
+
+    use "github/copilot.vim"
   end)
