@@ -20,8 +20,8 @@ keymap("n", "<C-a>", "gg<S-v>G", opts)
 -- Yで行ヤンクにする
 keymap("n", "Y", "yy", opts)
 
--- <Space>q で強制終了
-keymap("n", "q<Space>", ":q!<Return>", opts)
+-- <Space>q で終了
+keymap("n", "q<Space>", ":q<Return>", opts)
 
 -- 前後のバッファに移動
 keymap("n", "<C-[>", "<cmd>bprev<CR>", opts)
@@ -38,6 +38,7 @@ keymap("n", "<C-b>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- 定義ジ
 keymap("n", "<S-b>", "<cmd>lua vim.lsp.buf.references()<CR>", opts) -- 参照元ジャンプ
 keymap("n", "<C-h>", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- ホバー
 
+keymap("n", "<S-f>", "<cmd>FzfLua files<CR>", opts) -- FZFでファイル検索
 --[[
 
 Insert
