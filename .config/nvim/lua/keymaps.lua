@@ -41,7 +41,7 @@ keymap("n", "<C-h>", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- ホバー
 keymap("n", "<S-f>", "<cmd>FzfLua files<CR>", opts) -- FZFでファイル検索
 
 -- Python関連
-keymap("n", "<C-f>", "<cmd>!black %<CR>", opts) -- black
+keymap("n", "f<Space>", "<cmd>!black %<CR>", opts) -- black
 
 --[[
 Insert
