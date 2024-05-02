@@ -6,16 +6,6 @@ autocmd("BufWritePost", {
   command = "PackerCompile",
 })
 
--- 一部言語でインデントを4に
-autocmd("FileType", {
-  pattern = {"php", "python"},
-  callback = function()
-    vim.opt.tabstop = 4
-    vim.opt.shiftwidth = 4
-    vim.opt.softtabstop = 4
-  end
-})
-
 -- バッファを閉じたときのカーソル位置の記憶
 autocmd({ "BufReadPost" }, {
 	pattern = { "*" },
