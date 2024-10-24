@@ -27,7 +27,7 @@ alias csfix="./run.sh pcf:fix"
 alias csfixall="./run.sh pcf:fix-all"
 alias lys="./run.sh lrs:analyse"
 alias lysb="./run.sh lrs:generate-baseline"
-alias psql="docker run --rm -it --net=host postgres:12 psql"
+alias psqld="docker run --rm -it --net=host postgres:12 psql"
 
 # Prevent rm -f from asking for confirmation on things like `rm -f *.bak`.
 setopt rm_star_silent
