@@ -20,6 +20,8 @@ alias rb="ruby"
 alias py="python3"
 alias par="php artisan"
 alias f='nvim $(find . -type f -not -path "*/.git/*" -not -path "*/node_modules/*" | fzf)'
+alias tnew='tmux new -s $(basename "$PWD")'
+alias ta='tmux attach-session -t $(tmux list-sessions -F "#{session_name}" | fzf)'
 
 # 仕事関係
 alias mar="./mac artisan"
