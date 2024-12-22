@@ -1,8 +1,15 @@
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export EDITOR="nvim"
+eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 bindkey -e
+
+# tkinterのための設定
+export LDFLAGS="-L$(brew --prefix tcl-tk)/lib"
+export CPPFLAGS="-I$(brew --prefix tcl-tk)/include"
+export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
+export PATH="$(brew --prefix tcl-tk)/bin:$PATH"
 
 # Avoid accidental deletion
 alias vim='nvim'
