@@ -1,3 +1,13 @@
+if vim.g.vscode then
+  -- VSCodeから起動された場合
+  require('vscode')
+  require("base")
+  require("options")
+  require("keymaps")
+
+  return
+end
+
 require("base")
 require("colorscheme")
 require("options")
