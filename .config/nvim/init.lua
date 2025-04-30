@@ -1,6 +1,6 @@
 if vim.g.vscode then
   -- VSCodeから起動された場合
-  require('vscode')
+  require('vscode-settings')
   require("base")
   require("options")
   require("keymaps")
