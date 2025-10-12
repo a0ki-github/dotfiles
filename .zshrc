@@ -1,5 +1,6 @@
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export EDITOR="nvim"
+export PATH="$HOME/workspace/sdk/flutter/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
