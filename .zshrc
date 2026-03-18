@@ -33,6 +33,8 @@ alias ta='tmux attach-session -t $(tmux list-sessions -F "#{session_name}" | fzf
 
 # 仕事関係
 alias mar="./mac artisan"
+alias mmn="./mac manage"
+alias docs="./mac docs-generate && ./mac docs-build && ./mac docs-open"
 alias csfix="./run.sh pcf:fix"
 alias csfixall="./run.sh pcf:fix-all"
 alias lys="./run.sh lrs:analyse"
