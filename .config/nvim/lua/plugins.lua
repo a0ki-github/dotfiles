@@ -13,9 +13,6 @@ return require("packer").startup(
 
     use "Vimjas/vim-python-pep8-indent"
 
-    -- 括弧やブロックなどのペア間のジャンプなど
-    use {"andymass/vim-matchup", event = "VimEnter"}
-
     -- コミット履歴などの確認
     use { "rhysd/git-messenger.vim", opt = true, cmd = { "GitMessenger" } }
 
@@ -25,14 +22,6 @@ return require("packer").startup(
       requires = { "nvim-tree/nvim-web-devicons" },
     }
 
-    -- syntax highlight
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = function()
-            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-            ts_update()
-        end,
-    }
 
     -- マークダウンプレビュー
     use({
