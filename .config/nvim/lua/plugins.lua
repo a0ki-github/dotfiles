@@ -57,4 +57,10 @@ return require("packer").startup(
     use "hrsh7th/cmp-cmdline" -- コマンドモードでの補完
 
     use "github/copilot.vim"
+
+    -- Flutter開発
+    use {
+      "nvim-flutter/flutter-tools.nvim",
+      requires = { "nvim-lua/plenary.nvim" },
+    }
   end)
