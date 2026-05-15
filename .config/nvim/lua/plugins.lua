@@ -52,4 +52,13 @@ return require("packer").startup(
       "nvim-flutter/flutter-tools.nvim",
       requires = { "nvim-lua/plenary.nvim" },
     }
+
+    -- syntax highlight
+    use {
+      "nvim-treesitter/nvim-treesitter",
+      branch = "master",
+      run = function()
+        require("nvim-treesitter.install").update({ with_sync = true })()
+      end,
+    }
   end)
