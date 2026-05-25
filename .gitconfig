@@ -8,6 +8,7 @@
 	co = checkout
   com = commit -m
   coma = commit -am
+  ame = commit --amend
   d = diff
   ad = add -A
   s = status
