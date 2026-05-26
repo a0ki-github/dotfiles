@@ -3,16 +3,16 @@
 	email = aoki.hotaka@gmail.com
 [core]
 	editor = nvim
-	excludesfile = /Users/hotaka/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [alias]
 	co = checkout
-  com = commit -m
-  coma = commit -am
-  ame = commit --amend
-  d = diff
-  ad = add -A
-  s = status
-  w = switch
+	com = commit -m
+	coma = commit -am
+	ame = commit --amend
+	d = diff
+	ad = add -A
+	s = status
+	w = switch
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -20,3 +20,5 @@
 	process = git-lfs filter-process
 [init]
 	defaultBranch = main
+[commit]
+	template = ~/.stCommitMsg
