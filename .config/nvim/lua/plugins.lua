@@ -1,56 +1,43 @@
--- This file can be loaded by calling `lua require("plugins")` from your init.vim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git", "clone", "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
--- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
-
-return require("packer").startup(
-  function(use)
-    -- Packer can manage itself
-    use "wbthomason/packer.nvim"
-
-    -- コメントアウトのショートカット
-    use "tomtom/tcomment_vim"
-
-    use "Vimjas/vim-python-pep8-indent"
-
-    -- コミット履歴などの確認
-    use { "rhysd/git-messenger.vim", opt = true, cmd = { "GitMessenger" } }
-
-    -- ファイルあいまい検索
-    use { "ibhagwan/fzf-lua",
-      -- optional for icon support
-      requires = { "nvim-tree/nvim-web-devicons" },
-    }
-
-
-    -- マークダウンプレビュー
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
-
-    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
-    -- lsp
-    use {
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
-        "neovim/nvim-lspconfig",
-    }
-    use "hrsh7th/nvim-cmp" --補完エンジン本体
-    use "hrsh7th/cmp-nvim-lsp" --LSPを補完ソースに
-    use "hrsh7th/cmp-buffer"  --bufferを補完ソースに
-    use "hrsh7th/cmp-path"  --pathを補完ソースに
-    use "hrsh7th/vim-vsnip" --スニペットエンジン
-    use "hrsh7th/cmp-vsnip" --スニペットを補完ソースに
-    use "hrsh7th/cmp-cmdline" -- コマンドモードでの補完
-
-    use "github/copilot.vim"
-
-    -- Flutter開発
-    use {
-      "nvim-flutter/flutter-tools.nvim",
-      requires = { "nvim-lua/plenary.nvim" },
-    }
-
-  end)
+require("lazy").setup({
+  "tomtom/tcomment_vim",
+  "Vimjas/vim-python-pep8-indent",
+  { "rhysd/git-messenger.vim", cmd = { "GitMessenger" } },
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    build = function() vim.fn["mkdp#util#install"]() end,
+    ft = { "markdown" },
+  },
+  -- LSP & Mason
+  { "neovim/nvim-lspconfig" },
+  { "williamboman/mason.nvim" },
+  { "WhoIsSethDaniel/mason-tool-installer.nvim" },
+  { "williamboman/mason-lspconfig.nvim" },
+  -- 補完
+  "hrsh7th/nvim-cmp",
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-buffer",
+  "hrsh7th/cmp-path",
+  "hrsh7th/vim-vsnip",
+  "hrsh7th/cmp-vsnip",
+  "hrsh7th/cmp-cmdline",
+  -- その他
+  "github/copilot.vim",
+  {
+    "nvim-flutter/flutter-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+})
