@@ -1,3 +1,5 @@
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 require("flutter-tools").setup {
   -- 保存したときに自動でホットリロード
   hot_reload_on_save = true,
@@ -8,6 +10,7 @@ require("flutter-tools").setup {
   lsp = {
     -- 保存時に自動でフォーマット（インデント等）を整える設定
     color_capabilities = true,
+    capabilities = capabilities,
     settings = {
       showTodos = true,
       completeFunctionCalls = true,
