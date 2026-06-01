@@ -19,6 +19,5 @@ require("flutter-tools").setup {
 vim.g.mapleader = " "
 local map = vim.keymap.set
 map("n", "<leader>r", "<cmd>FlutterRun<CR>",        { desc = "Flutter Run" })
-map("n", "<leader>q", "<cmd>FlutterQuit<CR>",       { desc = "Flutter Quit" })
 map("n", "<leader>R", "<cmd>FlutterRestart<CR>",    { desc = "Flutter Hot Restart" })
 map("n", "<leader>l", "<cmd>FlutterLogToggle<CR>",  { desc = "Flutter Log Toggle" })
