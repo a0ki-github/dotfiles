@@ -1,0 +1,82 @@
+{
+  "env": {},
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run test:*)",
+      "Read(~/.zshrc)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(git:*)",
+      "Bash(pwd:*)",
+      "Bash(cd:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(terminal-notifier:*)",
+      "Bash(rg:*)",
+      "Bash(./mac test:*)",
+      "Bash(docker compose exec web pytest:*)",
+      "Skill(github-skill)"
+    ],
+    "deny": [
+      "Bash(sudo:*)",
+      "Bash(git config :*)",
+      "Bash(git checkout -f :*)",
+      "Bash(git reset :*)",
+      "Bash(brew install :*)",
+      "Bash(chmod 777 :*)",
+      "Bash(gh repo delete:*)",
+      "Read(.env.*)",
+      "Write(.env*)",
+      "Bash(wget:*)",
+      "Bash(nc:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm remove:*)",
+      "Bash(psql:*)",
+      "Bash(rm:*)",
+      "Bash(rm -rf:*)",
+      "Bash(rm -rf /*)"
+    ],
+    "ask": [
+      "Bash(curl:*)",
+      "Bash(git push:*)"
+    ],
+    "defaultMode": "auto"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/stop-send-notification.js"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "codex@openai-codex": true
+  },
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    }
+  },
+  "language": "日本語",
+  "alwaysThinkingEnabled": true,
+  "autoUpdatesChannel": "stable",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "voiceEnabled": true,
+  "skipAutoPermissionPrompt": true
+}
