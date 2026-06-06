@@ -7,7 +7,6 @@ require("mason-tool-installer").setup({
   ensure_installed = {
     -- LSP servers
     "lua-language-server",
-    "python-lsp-server",
     "intelephense",
     "vue-language-server",
     -- Formatters
