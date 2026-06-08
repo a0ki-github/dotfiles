@@ -5,11 +5,6 @@ require("mason").setup()
 
 require("mason-tool-installer").setup({
   ensure_installed = {
-    -- LSP servers
-    "lua-language-server",
-    "intelephense",
-    "vue-language-server",
-    -- Formatters
     "stylua",
     "prettier",
     "black",
@@ -43,8 +38,19 @@ vim.lsp.config('ts_ls', {
 })
 
 
+vim.lsp.config('basedpyright', {
+  settings = {
+    basedpyright = {
+      analysis = {
+        typeCheckingMode = 'standard',
+      },
+    },
+  },
+})
+
 require("mason-lspconfig").setup({
   ensure_installed = {
+    "lua_ls",
     "basedpyright",
     "vue_ls",
     "ts_ls",
