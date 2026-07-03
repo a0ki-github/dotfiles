@@ -73,6 +73,7 @@
   "language": "日本語",
   "alwaysThinkingEnabled": true,
   "autoUpdatesChannel": "stable",
+  "tui": "default",
   "voice": {
     "enabled": true,
     "mode": "hold"
