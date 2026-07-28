@@ -28,7 +28,7 @@
       "Bash(chmod 777 :*)",
       "Bash(gh repo delete:*)",
       "Read(.env.*)",
-      "Write(.env*)",
+      "Edit(.env*)",
       "Bash(wget:*)",
       "Bash(nc:*)",
       "Bash(npm uninstall:*)",
@@ -44,6 +44,7 @@
     ],
     "defaultMode": "auto"
   },
+  "model": "claude-fable-5[1m]",
   "hooks": {
     "Stop": [
       {
