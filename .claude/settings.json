@@ -81,5 +81,6 @@
   },
   "skipWorkflowUsageWarning": true,
   "skipAutoPermissionPrompt": true,
+  "agentPushNotifEnabled": true,
   "voiceEnabled": true
 }

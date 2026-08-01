@@ -30,6 +30,9 @@ mkdir -p ~/.zsh
 ln -s ~/dotfiles/.zsh/git-completion.zsh ~/.zsh/git-completion.zsh
 ln -s ~/dotfiles/.zsh/git-prompt.sh ~/.zsh/git-prompt.sh
 ln -s ~/dotfiles/.zsh/git-prompt.sh ~/.git-prompt.sh
+mkdir -p ~/.claude
+ln -s ~/dotfiles/.claude/settings.json ~/.claude/settings.json
+ln -s ~/dotfiles/.claude/skills ~/.claude/skills
 ```
 
 ### 4. Neovim の初回起動
